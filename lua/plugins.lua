@@ -15,4 +15,7 @@ return require('packer').startup(function(use)
   -- directory tree
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-tree/nvim-tree.lua'
+
+  -- home screen
+  use 'mhinz/vim-startify'
 end)
