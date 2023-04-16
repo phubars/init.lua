@@ -17,5 +17,23 @@ return require('packer').startup(function(use)
   -- colors
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
+  -- undos
+  use('mbbill/undotree')
+
+  -- language server
+  use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v2.x',
+	  requires = {
+		  -- LSP Support
+		  {'neovim/nvim-lspconfig'},             -- Required
+
+		  -- Autocompletion
+		  {'hrsh7th/nvim-cmp'},     -- Required
+		  {'hrsh7th/cmp-nvim-lsp'}, -- Required
+		  {'L3MON4D3/LuaSnip'},     -- Required
+	  }
+  }
+
 end)
 
