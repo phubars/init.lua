@@ -1,6 +1,15 @@
-require('lspconfig').pyright.setup{}
-require('lspconfig').terraformls.setup{}
-require('lspconfig').tsserver.setup{}
+require('lspconfig').pyright.setup{
+    capabilities = capabilities
+}
+require('lspconfig').terraformls.setup{
+    capabilities = capabilities
+}
+require('lspconfig').tsserver.setup{
+    capabilities = capabilities
+}
+require('lspconfig').bashls.setup{
+    capabilities = capabilities
+}
 
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
