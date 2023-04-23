@@ -14,7 +14,14 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- status line
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
   -- colors
+  use('navarasu/onedark.nvim')
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
   -- undos
