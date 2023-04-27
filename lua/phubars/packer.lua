@@ -20,12 +20,16 @@ return require('packer').startup(function(use)
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  -- colors
+  -- undos
+  use('mbbill/undotree')
+
+  -- colors and parsing
   use('navarasu/onedark.nvim')
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
-  -- undos
-  use('mbbill/undotree')
+  -- file navigation
+  use('nvim-lua/plenary.nvim')
+  use('ThePrimeagen/harpoon')
 
   -- language server
   use {
