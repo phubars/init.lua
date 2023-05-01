@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   -- colors and parsing
   use('navarasu/onedark.nvim')
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+  use('nvim-tree/nvim-web-devicons')
 
   -- file navigation
   use('nvim-lua/plenary.nvim')
