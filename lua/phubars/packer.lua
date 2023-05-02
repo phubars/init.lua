@@ -30,7 +30,6 @@ return require('packer').startup(function(use)
 
   -- file navigation
   use('nvim-lua/plenary.nvim')
-  use('ThePrimeagen/harpoon')
 
   -- language server
   use {
