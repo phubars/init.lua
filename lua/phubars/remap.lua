@@ -11,7 +11,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- yank into system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 -- paste but keep in buffer
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -22,6 +21,3 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 -- directory explorer
 vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
 
--- ugly
-vim.keymap.set("n", "K", "<nop>")
-vim.keymap.set("n", "Q", "<nop>")

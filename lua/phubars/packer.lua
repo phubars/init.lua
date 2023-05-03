@@ -54,11 +54,14 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
-  -- Lua
+  -- trouble text
   use {
       "folke/trouble.nvim",
       requires = "nvim-tree/nvim-web-devicons",
   }
+
+  -- formatting
+  use('dense-analysis/ale')
 
 end)
 
