@@ -31,4 +31,4 @@ vim.g.mapleader = " "
 -- netrw
 vim.g.netrw_banner = 1
 vim.g.netrw_keepdir = 0
-vim.g.netrw_liststyle = 1
+vim.g.netrw_liststyle = 0
