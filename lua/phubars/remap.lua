@@ -11,6 +11,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- yank into system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", "\"+y")
+-- paste from system clipboard
+vim.keymap.set({"n", "v"}, "<leader>P", "\"+p")
 
 -- paste but keep in buffer
 vim.keymap.set("x", "<leader>p", [["_dP]])
