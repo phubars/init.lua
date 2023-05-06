@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
   -- colors and parsing
   use('navarasu/onedark.nvim')
+  use { "catppuccin/nvim", as = "catppuccin" }
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 
   -- language server
@@ -62,5 +63,8 @@ return require('packer').startup(function(use)
 
   -- git
   use('f-person/git-blame.nvim')
+
+  -- tmux
+  use('christoomey/vim-tmux-navigator')
 end)
 
