@@ -55,7 +55,9 @@ return require('packer').startup(function(use)
   -- trouble text
   use {
       "folke/trouble.nvim",
-      requires = "nvim-tree/nvim-web-devicons",
+      requires = {
+          { 'nvim-tree/nvim-web-devicons', opt = true }
+      }
   }
 
   -- formatting
