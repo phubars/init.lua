@@ -21,14 +21,13 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.termguicolors = true
-
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-
-vim.g.mapleader = " "
-
 -- netrw
 vim.g.netrw_banner = 1
 vim.g.netrw_keepdir = 0
 vim.g.netrw_liststyle = 0
+
+vim.opt.termguicolors = true
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
+vim.g.mapleader = " "
+
