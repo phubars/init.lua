@@ -3,7 +3,7 @@ vim.opt.guicursor = ""
 
 -- line numbers
 vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- 4 spaces duh
 vim.opt.tabstop = 4
