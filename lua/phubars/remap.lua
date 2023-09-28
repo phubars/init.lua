@@ -22,4 +22,3 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 -- directory explorer
 vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
-

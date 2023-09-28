@@ -5,7 +5,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<C-p>', builtin.git_files, {})
 vim.keymap.set('n', '<C-f>', builtin.grep_string, {})
 vim.keymap.set('n', '<C-b>', builtin.buffers, {})
-vim.keymap.set('n', '<C-l>', builtin.live_grep, {})
+vim.keymap.set('n', '<C-g>', builtin.live_grep, {})
 
 vim.keymap.set('n', '<leader>fo', builtin.oldfiles, {})
 vim.keymap.set('n', '<leader>fc', builtin.commands, {})
