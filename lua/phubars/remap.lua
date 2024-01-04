@@ -22,3 +22,10 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 -- directory explorer
 vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
+
+-- folds
+function EnableFolds()
+    vim.opt.foldmethod = "expr"
+    vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+end
+vim.keymap.set("n", "<leader>z", EnableFolds)
