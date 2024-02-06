@@ -30,7 +30,7 @@ return require('packer').startup(function(use)
   -- language server
   use {
       'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v2.x',
+	  branch = 'v3.x',
 	  requires = {
 		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},
@@ -71,5 +71,8 @@ return require('packer').startup(function(use)
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
   })
+
+  -- copilot
+  use('github/copilot.vim')
 end)
 
