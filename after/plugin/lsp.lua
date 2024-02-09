@@ -12,7 +12,7 @@ require('mason-lspconfig').setup({
     }
 })
 
--- lsp.preset("recommended")
+lsp_zero.preset("recommended")
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     vim.lsp.diagnostic.on_publish_diagnostics, { virtual_text = true }
