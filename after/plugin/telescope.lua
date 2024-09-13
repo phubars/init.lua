@@ -13,6 +13,7 @@ vim.keymap.set('n', '<leader>fp', builtin.planets, {})
 
 vim.keymap.set('n', '<leader>gc', builtin.git_commits, {})
 
+vim.keymap.set('n', '<leader>r', builtin.resume, {})
 
 vim.keymap.set('n', '<leader>ic', builtin.lsp_incoming_calls, {})
 vim.keymap.set('n', '<leader>oc', builtin.lsp_outgoing_calls, {})
