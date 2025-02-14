@@ -60,8 +60,8 @@ return require('packer').startup(function(use)
   -- formatting
   use('dense-analysis/ale')
 
-  -- git
-  use('f-person/git-blame.nvim')
+  -- git blame
+  use('f-person/git-blame.nvim' )
 
   -- tmux
   use('christoomey/vim-tmux-navigator')
@@ -71,5 +71,8 @@ return require('packer').startup(function(use)
       "iamcco/markdown-preview.nvim",
       run = function() vim.fn["mkdp#util#install"]() end,
   })
+
+  -- * mini-ai *
+  use('echasnovski/mini.nvim')
 end)
 

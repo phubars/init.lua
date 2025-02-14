@@ -5,5 +5,6 @@ vim.g.ale_fixers = {
     javascript = { "prettier", "eslint" },
     terraform = { "terraform" },
     json = { "prettier" },
-    lua = { "lua-format" }
+    lua = { "lua-format" },
+    nix = { "nixfmt" },
 }
